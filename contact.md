@@ -5,8 +5,8 @@ nav_order: 4
 
 # Contact
 
-You can reach me at:
+I can be reached at: 
 
-- 📧 yourname@gmail.com  
-- 🌐 [GitHub](https://github.com/yourusername)  
-- 📍 Based in Japan  
+- 📧 reagan.hedlund@temple.edu
+- 🌐 [GitHub](https://github.com/reagan-geo)  
+- 📍 Based in Philadelphia, PA  
