@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>reagan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+<style>
+/* BACKGROUND: the page, line and labels are transparent. Put your image here when you have it:
+   html { background: url("assets/background.jpg") center / cover no-repeat fixed; } */
+html{background:#1d2327}
+:root{--line:#1f4fa3;--dot:clamp(30px,5.5vw,46px);--bar:clamp(12px,2vw,18px)}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;background:transparent;
+  font-family:Roboto,system-ui,sans-serif}
+
+/* Upper-left identity block (edit the text and colors in the HTML below) */
+.brand{width:min(400px,calc(100vw - 32px));margin:16px}
+.bar{display:flex;align-items:center;gap:12px;background:#000;color:#fff;padding:10px 16px}
+.bar svg{width:34px;height:30px;flex:none}
+.bar h1{margin:0;font-size:clamp(28px,7vw,38px);font-weight:900;letter-spacing:-.01em;line-height:1}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-top:4px}
+.tile{display:flex;flex-direction:column;color:#fff;background:var(--c)}
+.tile b{font-size:clamp(48px,14vw,72px);font-weight:900;line-height:1;padding:12px 0 10px 10px}
+.tile span{flex:1;background:color-mix(in srgb,var(--c) 78%,#000);padding:8px 10px 10px;font-weight:700;font-size:14px;line-height:1.2}
+
+/* Subway-line navigation */
+nav{width:min(900px,86vw);margin:auto;padding:24px 0;background:transparent}
+.line{position:relative;display:flex;justify-content:space-between;margin:0;padding:0;list-style:none}
+.line::before{content:"";position:absolute;left:-7%;right:-7%;top:calc(var(--dot)/2 - var(--bar)/2);
+  height:var(--bar);border-radius:99px;background:var(--line)}
+.line li{position:relative;flex:0 0 auto}
+.line a{display:flex;flex-direction:column;align-items:center;gap:14px;text-decoration:none;color:#000}
+.dot{width:var(--dot);height:var(--dot);box-sizing:border-box;border-radius:50%;background:#fff;
+  border:clamp(5px,.9vw,8px) solid #000;transition:background-color .15s}
+.name{font-weight:700;font-size:clamp(20px,4.6vw,42px);line-height:1;letter-spacing:-.01em;white-space:nowrap;
+  paint-order:stroke fill;-webkit-text-stroke:.28em #fff;text-shadow:0 0 6px #fff}
+.line a:hover .dot,.line a:focus-visible .dot{background:#000}
+.line a:focus-visible{outline:3px solid #fff;outline-offset:8px;border-radius:6px}
+@media(prefers-reduced-motion:reduce){.dot{transition:none}}
+</style>
+</head>
+<body>
+<header class="brand">
+  <div class="bar">
+    <svg viewBox="0 0 34 30" aria-hidden="true"><rect y="12" width="34" height="6" fill="#1f4fa3"/><circle cx="17" cy="15" r="11" fill="#000" stroke="#fff" stroke-width="4"/></svg>
+    <h1>reagan</h1>
+  </div>
+  <div class="tiles">
+    <div class="tile" style="--c:#1f4fa3"><b aria-hidden="true">T</b><span>Temple PSM student</span></div>
+    <div class="tile" style="--c:#f14728"><b aria-hidden="true">G</b><span>Geospatial projects</span></div>
+    <div class="tile" style="--c:#5eaa46"><b aria-hidden="true">P</b><span>Philadelphia</span></div>
+  </div>
+</header>
+<nav aria-label="Main">
+  <ol class="line">
+    <li><a href="about.html"><span class="dot"></span><span class="name">About me</span></a></li>
+    <li><a href="projects.html"><span class="dot"></span><span class="name">Projects</span></a></li>
+    <li><a href="contact.html"><span class="dot"></span><span class="name">Contact</span></a></li>
+  </ol>
+</nav>
+</body>
+</html>
