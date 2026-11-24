@@ -5,9 +5,9 @@ nav_order: 1
 
 # 👋 Welcome
 
-Hi! I’m **Your Name**, a [short description — e.g. researcher, map designer, etc.].
+Hi! I’m **Reagan**, a graduate student at Temple University studying geospatial data science.
 
-Use the links on the left (or top, depending on theme) to explore:
+I use this space to publish projects from my academic studies and professional interests.
 
 - [About Me](about.md)
 - [Projects](projects.md)
